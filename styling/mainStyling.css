@@ -1,0 +1,183 @@
+/*Default size is 1200px wide and up*/
+html, body{
+	height: 100%;
+	width: 100%;
+    font-family: 'Roboto Slab';
+    font-size: 18px;
+    background-color: #00061A;
+    color: #E8FBFD;
+}
+
+body{
+	margin-top: 50px;
+}
+
+a:hover{
+	text-decoration: none;
+}
+
+p{
+	text-indent: 1em;
+	line-height: 1.5;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~Classes~~~~~~~~~~~~~~~~~~~~~~~*/
+.audiowide{
+	font-family: 'Audiowide';
+}
+
+.anchor{
+  display: block;
+  height: 50px; /*same height as header*/
+  margin-top: -50px; /*same height as header*/
+  visibility: hidden;
+}
+
+.borderRadius0{
+	border-radius: 0;
+}
+
+.margin0{
+	margin: 0;
+}
+
+.navbar {
+	margin-bottom: 0;
+	border-radius: 0;
+	background-color: #00061A; 
+	border-color: #353535;
+}
+
+.padding0{
+	padding: 0;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~IDs~~~~~~~~~~~~~~~~~~~~~~~*/
+#aboutMe{
+	margin-top: 15%;
+	margin-left: 2.5%;
+	display: hidden;
+	width: 40%;
+	float: left;
+	background: rgba(255,255,255,0.25);
+	color: #030624;
+	border-radius: 10px;
+	border: solid 1px #030624;
+}
+
+#navbarTitle{
+	font-size: 1.5em;
+	font-weight: bold;
+	color: #1B58B4;
+}
+
+/*~~~~~~~~~~~~~~~~~~~Social Media begins~~~~~~~~~~~~~~~~~~~*/
+#email{
+	font-size: 2.25em;
+	color: #BD0707;
+	-webkit-transition: all 0.25s ease;
+    -moz-transition: all 0.25s ease;
+    -o-transition: all 0.25s ease;
+    -ms-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+}
+
+#gitHub{
+	font-size: 3em;
+	color: #511094;
+	-webkit-transition: all 0.25s ease;
+    -moz-transition: all 0.25s ease;
+    -o-transition: all 0.25s ease;
+    -ms-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+}
+
+#linkedIn{
+	font-size: 3em;
+	color: #28ABE8;
+	-webkit-transition: all 0.25s ease;
+    -moz-transition: all 0.25s ease;
+    -o-transition: all 0.25s ease;
+    -ms-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+}
+
+#email:hover, #facebook:hover, #gitHub:hover, #linkedIn:hover{
+	opacity: 0.5;
+}
+/*~~~~~~~~~~~~~~~~~~~Social Media ends~~~~~~~~~~~~~~~~~~~*/
+
+/*~~~~~~~~~~~~~~~~~~~Parallax effect begins~~~~~~~~~~~~~~~~~~~*/
+.parallax{ 
+    height: 100%;
+    height: -webkit-calc(100% - 50px);
+    height: -moz-calc(100% - 50px);
+    height: calc(100% - 50px);
+    padding-left: 0 !important;
+	padding-right: 0 !important;
+}
+
+.aboutParallax{
+	height: 100%;
+	background-image: url("../images/portrait1.jpg");
+	background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.portfolioParallax{
+	height: 100%;
+	background-image: url("../images/galaxy.jpg");
+	background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.resumeParallax{
+	height: 100%;
+	background-image: url("../images/galaxy.jpg");
+	background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/*~~~~~~~~~~~~~~~~~~~Parallax effect ends~~~~~~~~~~~~~~~~~~~*/
+
+
+/* ------------------------Landscape tablets and medium desktops--------------------------------- */
+@media (min-width: 992px) and (max-width: 1199px) {
+	body{
+		font-size: 16px;
+	}
+}
+
+/* --------------------------Portrait tablets and small desktops--------------------------------- */
+@media (min-width: 768px) and (max-width: 991px) {
+	body{
+		font-size: 14px;
+	}
+ 
+}	
+
+/* --------------------------------Landscape phones and portrait tablets------------------------- */
+@media (max-width: 767px) {
+	body{
+		font-size: 12px;
+	}
+}	
+
+/* ---------------------------------Large Portrait phones--------------------------------- */
+@media (max-width: 480px) {
+	body{
+		font-size: 10px;
+	}
+}
+
+/* ---------------------------------Small Portrait phones--------------------------------- */
+@media (max-width: 320px) {
+	body{
+		font-size: 8px;
+	}
+}	
