@@ -61,12 +61,12 @@
 				<div id="aboutMe" class="container-fluid float-left text-center">
 					<h1 class="audiowide d-inline-block">About Me</h1>
 					<div class="float-left text-left" style="max-width: 60vw;">
-						<p>Hello! My name is Wynston Ramsay and I am a 4th year Computer Science student at the University of Saskatchewan. I have experience in web design as well as software engineering. When I develop, I strive to make the user's experience top priority among creating a maintainable and efficient solution.</p>
+						<p>Hello! My name is Wynston Ramsay and I am a 4th year Computer Science student at the University of Saskatchewan.</p>
+						<p>I have experience in web design as well as software engineering. When I develop, I strive to make the user's experience top priority among creating a maintainable and efficient solution.</p>
 
 						<div class="nav center-block text-center">
-							<br>
-							<a href="#project1Anchor" style="font-size: 3em; color: #45BE1B; text-shadow: 0 4px #07680C;">
-								<span class="glyphicon glyphicon-arrow-down"></span>
+							<a href="#project1Anchor" id="aboutMeToPortfolio">
+								<span class="glyphicon glyphicon-circle-arrow-down"></span>
 							</a>
 						</div>
 					</div>
@@ -92,38 +92,53 @@
 		<!-- Portfolio ends -->
 
 		<!-- Resume begins -->
+		<span id="resumeAnchor" class="anchor"></span>
 		<div class="parallax">
 			<div class="container-fluid resumeParallax text-center">
-				<span id="resumeAnchor" class="anchor"></span>
-				<div id="resume" class="container-fluid text-center">
-					<h1 class="audiowide">My Résumé</h1>
-					<span><a href="images/Wynstons Resume.pdf" download="Wynston's Résumé">Download</a></span>
+				<div id="resume" class="container-fluid">
+					<div class="row resumeBox resumeBoxPadding resumeBoxMargin" id="resumeTitleRow">
+						<h1 class="audiowide center-block">
+							My Résumé
+						</h1>
+						<span><a href="images/Wynstons Resume.pdf" download="Wynston's Résumé">Download</a></span>
+					</div>
+					<div class="row" id=" resumeContentRow"style="height:90%;">
+						<div class="col-6 pull-left resumeColContainer">
+							<!-- Education -->
+							<div class="resumeBox text-left resumeBoxPadding resumeBoxMargin">
+								<h1 class="text-center">Education</h1>
+								<p>• Computer Science Award and graduated with High Honours from Marion M. Graham Collegiate in 2014</p>
+								<p>• Currently participating in Computer Science through the Arts and Science College at the University of Saskatchewan</p>
+								<p>• Going for a four-year Bachelor’s Degree in Computer Science</p>
+								<p>• Planning to graduate the fall semester of 2018</p>
+							</div>
 
-
-					<!-- Education -->
-					<h1>Education</h1>
-					<p>Computer Science Award and graduated with High Honours from Marion M. Graham Collegiate in 2014</p>
-					<p>Currently participating in Computer Science through the Arts and Science College at the University of Saskatchewan</p>
-					<p>Going for a four-year Bachelor’s Degree in Computer Science</p>
-					<p>Plans to graduate after the fall semester of 2018</p>
-
-					<!-- Work Experience -->
-					<h1>Work Experience</h1>
-					<p>Front-End Developer with Aura Technologies Inc. during the summer of 2017</p>
-					<p>Employed at Airtech Management Ltd. as a technician during the summers of 2015 and 2016</p>
-
-					<!-- Skill -->
-					<h1>Skills</h1>
-
-					<!-- References -->
-					<h1>References</h1>
-					<h3>Leejay Schmidt</h3>
-					<p>•	CEO of Aura Technologies Inc.</p>
-					<p>•	306-371-7247</p>
-					<h3>Terry Goertzen</h3>
-					<p>•	Airtech Journeyman Technician and Foreman</p>
-					<p>•	306-292-8794</p>
-
+							<!-- Work Experience -->
+							<div class="resumeBox text-left resumeBoxPadding">
+								<h1 class="text-center">Work Experience</h1>
+								<p>• Front-End Developer with Aura Technologies Inc. during the summer of 2017</p>
+								<p>• Employed at Airtech Management Ltd. as a technician during the summers of 2015 and 2016</p>
+							</div>
+						</div>
+						<div class="col-6 pull-right resumeColContainer" style="width: 50%; padding-left: 0.5em;">
+							<!-- Skill -->
+							<div class="resumeBox text-center resumeBoxPadding resumeBoxMargin">
+								<h1 class="text-center">Skills</h1>
+								<img class="img img-responsive center-block" ng-src="images/skillsGraph.png" style="height: 25vh; padding-bottom: 0.5em;">
+							</div>
+							
+							<!-- References -->
+							<div class="resumeBox text-left resumeBoxPadding">
+								<h1 class="text-center">References</h1>
+								<h3> Leejay Schmidt</h3>
+								<p>• CEO of Aura Technologies Inc.</p>
+								<p>• 306-371-7247</p>
+								<h3> Terry Goertzen</h3>
+								<p>• Airtech Journeyman Technician and Foreman</p>
+								<p>• 306-292-8794</p>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>

@@ -68,13 +68,18 @@ p{
 #aboutMe{
 	margin-top: 15%;
 	margin-left: 2.5%;
-	display: hidden;
 	width: 40%;
 	float: left;
 	background: rgba(255,255,255,0.4);
 	color: #061D40;
 	border-radius: 10px;
 	border: solid 1px #030624;
+}
+
+#aboutMeToPortfolio{
+	font-size: 3em; 
+	color: #38B41B; 
+	text-shadow: 0 4px #096710;
 }
 
 #navbarTitle{
@@ -87,6 +92,39 @@ p{
 
 #myNavbar{
 	height: 100%;
+}
+
+#resume{
+	padding-top: 1em;
+}
+
+#resumeTitleRow{
+	height: 10%;
+}
+
+#resumeContentRow{
+	height: 90%;
+}
+
+.resumeColContainer{
+	width: 50%; 
+	padding-right: 0.5em;
+}
+
+.resumeBox{
+	background: rgba(255,255,255,0.4);
+	color: #061D40;
+	border-radius: 10px;
+	border: solid 1px #030624;
+}
+
+.resumeBoxPadding{
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+}
+
+.resumeBoxMargin{
+	margin-bottom: 0.5em;
 }
 
 /*~~~~~~~~~~~~~~~~~~~Social Media begins~~~~~~~~~~~~~~~~~~~*/
