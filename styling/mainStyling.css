@@ -48,6 +48,18 @@ p{
 	border-color: #353535;
 }
 
+
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover{
+	background-color: #1B58B4;
+	border-radius: 2em;
+	box-shadow: 0 4px #0A377C;
+}
+
+.navbar-inverse .navbar-nav> li>a{
+	margin-top: 0.33em;
+	margin-bottom: 0.33em;
+}
+
 .padding0{
 	padding: 0;
 }
@@ -59,8 +71,8 @@ p{
 	display: hidden;
 	width: 40%;
 	float: left;
-	background: rgba(255,255,255,0.25);
-	color: #030624;
+	background: rgba(255,255,255,0.4);
+	color: #061D40;
 	border-radius: 10px;
 	border: solid 1px #030624;
 }
@@ -69,6 +81,12 @@ p{
 	font-size: 1.5em;
 	font-weight: bold;
 	color: #1B58B4;
+	margin-top: 0.25em;
+	margin-bottom: 0.25em;
+}
+
+#myNavbar{
+	height: 100%;
 }
 
 /*~~~~~~~~~~~~~~~~~~~Social Media begins~~~~~~~~~~~~~~~~~~~*/

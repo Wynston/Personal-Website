@@ -14,8 +14,8 @@
 	</head>
 	<body class="container-fluid padding0" ng-app="appModule" ng-controller="mainController" ng-init="init()" ng-cloak id="MAIN" data-spy="scroll" data-target=".navbar" data-offset="50">
 		<nav class="navbar navbar-inverse navbar-fixed-top audiowide" data-spy="affix" data-offset-top="197">
-			<div class="container-fluid">
-				<div class="navbar-header">
+			<div class="container-fluid" style="height: 100%;">
+				<div class="navbar-header" style="height: 100%;">
 					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
@@ -28,10 +28,11 @@
 						<ul class="nav navbar-nav">
 							<li><a href="#aboutMeAnchor">About</a></li>
 							<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Portfolio <span class="caret"></span></a>
-							<ul class="dropdown-menu">
-								<li><a href="#project1Anchor">Project 1</a></li>
-								<li><a href="#project2Anchor">Project 2</a></li>
-							</ul></li>
+								<ul class="dropdown-menu">
+									<li><a href="#project1Anchor">Project 1</a></li>
+									<li><a href="#project2Anchor">Project 2</a></li>
+								</ul>
+							</li>
 							<li><a href="#resumeAnchor">Résumé</a></li>
 							<li><a href="#contactInfoAnchor">Contact Info</a></li>
 						</ul>
@@ -60,7 +61,14 @@
 				<div id="aboutMe" class="container-fluid float-left text-center">
 					<h1 class="audiowide d-inline-block">About Me</h1>
 					<div class="float-left text-left" style="max-width: 60vw;">
-						<p>I am a 4th year Computer Science student at the University of Saskatchewan. I am experienced in front-end development and creating an enjoyable user experience. </p>
+						<p>Hello! My name is Wynston Ramsay and I am a 4th year Computer Science student at the University of Saskatchewan. I have experience in web design as well as software engineering. When I develop, I strive to make the user's experience top priority among creating a maintainable and efficient solution.</p>
+
+						<div class="nav center-block text-center">
+							<br>
+							<a href="#project1Anchor" style="font-size: 3em; color: #45BE1B; text-shadow: 0 4px #07680C;">
+								<span class="glyphicon glyphicon-arrow-down"></span>
+							</a>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -89,7 +97,33 @@
 				<span id="resumeAnchor" class="anchor"></span>
 				<div id="resume" class="container-fluid text-center">
 					<h1 class="audiowide">My Résumé</h1>
-					<a href="images/Wynstons Resume.pdf" download="Wynston's Résumé">Download</a>
+					<span><a href="images/Wynstons Resume.pdf" download="Wynston's Résumé">Download</a></span>
+
+
+					<!-- Education -->
+					<h1>Education</h1>
+					<p>Computer Science Award and graduated with High Honours from Marion M. Graham Collegiate in 2014</p>
+					<p>Currently participating in Computer Science through the Arts and Science College at the University of Saskatchewan</p>
+					<p>Going for a four-year Bachelor’s Degree in Computer Science</p>
+					<p>Plans to graduate after the fall semester of 2018</p>
+
+					<!-- Work Experience -->
+					<h1>Work Experience</h1>
+					<p>Front-End Developer with Aura Technologies Inc. during the summer of 2017</p>
+					<p>Employed at Airtech Management Ltd. as a technician during the summers of 2015 and 2016</p>
+
+					<!-- Skill -->
+					<h1>Skills</h1>
+
+					<!-- References -->
+					<h1>References</h1>
+					<h3>Leejay Schmidt</h3>
+					<p>•	CEO of Aura Technologies Inc.</p>
+					<p>•	306-371-7247</p>
+					<h3>Terry Goertzen</h3>
+					<p>•	Airtech Journeyman Technician and Foreman</p>
+					<p>•	306-292-8794</p>
+
 				</div>
 			</div>
 		</div>
