@@ -39,7 +39,6 @@ p{
 
 .footer{
 	font-size: 0.75em;
-	margin-bottom: 1em;
 }
 
 .margin0{
@@ -87,10 +86,13 @@ p{
 	border: solid 1px #030624;
 }
 
-#aboutMeToPortfolio{
-	font-size: 3em; 
-	color: #38B41B; 
-	text-shadow: 0 4px #096710;
+#contactInfo{
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+#contactHeader{
+	font-size: 1.5em;
 }
 
 #navbarTitle{
@@ -116,7 +118,7 @@ p{
 }
 
 #wrLogo{
-	height: 1.25em;
+	height: 1.25em !important;
 }
 
 /*~~~~~~~~~~~~~~~~~~~Social Media begins~~~~~~~~~~~~~~~~~~~*/
@@ -131,8 +133,8 @@ p{
 }
 
 #gitHubLarge{
-	font-size: 3em;
-	color: #511094;
+	font-size: 3em !important;
+	color: #511094 !important;
 	-webkit-transition: all 0.25s ease;
     -moz-transition: all 0.25s ease;
     -o-transition: all 0.25s ease;
@@ -142,7 +144,7 @@ p{
 
 #gitHubSmall{
 	font-size: 1.25em;
-	color: #511094;
+	color: #511094 !important;
 }
 
 #linkedIn{
@@ -157,7 +159,7 @@ p{
 
 #resumeIcon{
 	font-size: 1.25em;
-	color: #941016;
+	color: #941016 !important;
 }
 
 #email:hover, #gitHubLarge:hover, #linkedIn:hover{
@@ -178,15 +180,6 @@ p{
     background-size: cover;
     -webkit-filter: contrast(125%) brightness(125%);
     filter: contrast(125%) brightness(125%);
-}
-
-.contactInfoParallax{
-	max-height: 50%;
-	background-image: url("../images/galaxy.jpg");
-	background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 /*~~~~~~~~~~~~~~~~~~~Parallax effect ends~~~~~~~~~~~~~~~~~~~*/
 
