@@ -21,155 +21,61 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand" id="navbarTitle">Wynston Ramsay</a>
+					<a href="index.html" class="navbar-brand" id="navbarTitle">Wynston Ramsay</a>
 				</div>
 				<div>
 					<div class="collapse navbar-collapse" id="myNavbar">
-						<ul class="nav navbar-nav">
-							<li><a href="#aboutMeAnchor">About</a></li>
-							<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Portfolio <span class="caret"></span></a>
-								<ul class="dropdown-menu">
-									<li><a href="#project1Anchor">Project 1</a></li>
-									<li><a href="#project2Anchor">Project 2</a></li>
-								</ul>
-							</li>
-							<li><a href="#resumeAnchor">Résumé</a></li>
-							<li><a href="#contactInfoAnchor">Contact Info</a></li>
+						<ul class="nav navbar-nav navbar-left">
+							<li><a href="#aboutMeAnchor"><img id="wrLogo" class="img img-circle" ng-src="images/WR_Logo.png"> About</a></li>
+							<li><a href="#contactInfoAnchor"><i class="fa fa-address-book-o" style="color: #D2691E;"></i> Contact Info</a></li>
 						</ul>
-						<!-- Social Media -->
 						<ul class="nav navbar-nav navbar-right">
-							<!-- email -->
-							<a href="mailto:wynstonramsay@gmail.com" id="email">
-								<span class="glyphicon glyphicon-envelope"></span>
-							</a>
-							</a>
-							<!-- GitHub -->
-							<a href="https://github.com/Wynston" target="_blank"><i id="gitHub" class="fa fa-github-square"></i>
-							</a>
-							<!-- LinkedIn -->
-							<a href="https://www.linkedin.com/in/wynston-ramsay-22812bb8/" target="_blank"><i id="linkedIn" class="fa fa-linkedin-square"></i>
-							</a>
+							<li><a href="https://github.com/Wynston" target="_blank"><i id="gitHubSmall" class="fa fa-github-square"></i> Portfolio</a></li>
+								
+							<li><a href="images/Wynstons Resume.pdf" target="_blank"><i id="resumeIcon" class="fa fa-file-pdf-o"></i> Résumé</a></li>
 						</ul>
 					</div>
 				</div>
 			</div>
 		</nav>
 		<!-- About Me begins -->
-		<div class="parallax">
-			<div class="container-fluid aboutParallax text-center">
-				<span id="aboutMeAnchor" class="anchor"></span>
-				<div id="aboutMe" class="container-fluid float-left text-center">
-					<h1 class="audiowide d-inline-block">About Me</h1>
-					<div class="float-left text-left" style="max-width: 60vw;">
-						<p>Hello! My name is Wynston Ramsay and I am a 4th year Computer Science student at the University of Saskatchewan.</p>
-						<p>I have experience in web design as well as software engineering. When I develop, I strive to make the user's experience top priority among creating a maintainable and efficient solution.</p>
-
-						<div class="nav center-block text-center">
-							<a href="#project1Anchor" id="aboutMeToPortfolio">
-								<span class="glyphicon glyphicon-circle-arrow-down"></span>
-							</a>
-						</div>
-					</div>
+		<div class="aboutParallax">
+			<span id="aboutMeAnchor" class="anchor"></span>
+			<div id="aboutMe" class="container-fluid float-left text-center">
+				<div class="audiowide" style="font-size: 2em;">About Me</div>
+				<div class="float-left text-left" style="max-width: 60vw;">
+					<p>Hello! My name is Wynston Ramsay and I am a 4th year Computer Science student at the University of Saskatchewan.</p>
+					<p>I have experience in web design as well as software engineering. When I develop, I strive to make the user's experience top priority among creating a maintainable and efficient solution.</p>
 				</div>
 			</div>
 		</div>
 		<!-- About Me ends -->
 
-		<!-- Portfolio begins -->
-		<div class="parallax">
-			<div class="container-fluid portfolioParallax text-center">
-				<div id="portfolio" class="container-fluid text-center">
-					<!-- Project 1 -->
-					<span id="project1Anchor" class="anchor"></span>
-					<h1 class="audiowide">Project 1</h1>
-
-					<!-- Project 2 -->
-					<span id="project2Anchor" class="anchor"></span>
-					<h1 class="audiowide">Project 2</h1>
-				</div>
-			</div>
-		</div>
-		<!-- Portfolio ends -->
-
-		<!-- Resume begins -->
-		<span id="resumeAnchor" class="anchor"></span>
-		<div class="parallax">
-			<div class="container-fluid resumeParallax text-center">
-				<div id="resume" class="container-fluid">
-					<div class="row resumeBox resumeBoxPadding resumeBoxMargin" id="resumeTitleRow">
-						<h1 class="audiowide center-block">
-							My Résumé
-						</h1>
-						<span><a href="images/Wynstons Resume.pdf" download="Wynston's Résumé">Download</a></span>
-					</div>
-					<div class="row" id=" resumeContentRow"style="height:90%;">
-						<div class="col-6 pull-left resumeColContainer">
-							<!-- Education -->
-							<div class="resumeBox text-left resumeBoxPadding resumeBoxMargin">
-								<h1 class="text-center">Education</h1>
-								<p>• Computer Science Award and graduated with High Honours from Marion M. Graham Collegiate in 2014</p>
-								<p>• Currently participating in Computer Science through the Arts and Science College at the University of Saskatchewan</p>
-								<p>• Going for a four-year Bachelor’s Degree in Computer Science</p>
-								<p>• Planning to graduate the fall semester of 2018</p>
-							</div>
-
-							<!-- Work Experience -->
-							<div class="resumeBox text-left resumeBoxPadding">
-								<h1 class="text-center">Work Experience</h1>
-								<p>• Front-End Developer with Aura Technologies Inc. during the summer of 2017</p>
-								<p>• Employed at Airtech Management Ltd. as a technician during the summers of 2015 and 2016</p>
-							</div>
-						</div>
-						<div class="col-6 pull-right resumeColContainer" style="width: 50%; padding-left: 0.5em;">
-							<!-- Skill -->
-							<div class="resumeBox text-center resumeBoxPadding resumeBoxMargin">
-								<h1 class="text-center">Skills</h1>
-								<img class="img img-responsive center-block" ng-src="images/skillsGraph.png" style="height: 25vh; padding-bottom: 0.5em;">
-							</div>
-							
-							<!-- References -->
-							<div class="resumeBox text-left resumeBoxPadding">
-								<h1 class="text-center">References</h1>
-								<h3> Leejay Schmidt</h3>
-								<p>• CEO of Aura Technologies Inc.</p>
-								<p>• 306-371-7247</p>
-								<h3> Terry Goertzen</h3>
-								<p>• Airtech Journeyman Technician and Foreman</p>
-								<p>• 306-292-8794</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- Resume ends -->
-
 		<!-- Contact Info begins-->
-		<div class="container-fluid text-center">
+		<div class="contactInfoParallax">
 			<span id="contactInfoAnchor" class="anchor"></span>
 			<div id="contactInfo" class="container-fluid text-center">
-				<h1>Contact Wynston Ramsay</h1>
+				<h3>Contact Wynston Ramsay</h3>
 				<p>Email: <a href="mailto:wynstonramsay@gmail.com">wynstonramsay@gmail.com</a></p>  
 				<p>Phone: <a href="tel:306-380-3701">1-(306)-380-3701</a></p>
-				<p>Address: 535 Redberry Road <br> Saskatoon, Saskatchewan <br> S7K 4S2</p>
 
 				<!-- email -->
 				<a href="mailto:wynstonramsay@gmail.com" id="email">
 					<span class="glyphicon glyphicon-envelope"></span>
 				</a>
 				<!-- GitHub -->
-				<a href="https://github.com/Wynston" target="_blank"><i id="gitHub" class="fa fa-github-square"></i>
+				<a href="https://github.com/Wynston" target="_blank"><i id="gitHubLarge" class="fa fa-github-square"></i>
 				</a>
 				<!-- LinkedIn -->
-				<a href="https://www.linkedin.com/in/wynston-ramsay-22812bb8/" target="_blank"><i id="linkedIn" class="fa fa-linkedin-square"></i>
+				<a href="https://www.linkedin.com/in/wynston-ramsay-22812bb8/" target="_blank"><i id="linkedIn" class="fa fa-linkedin-square largeIcon"></i>
 				</a>
+
+				<footer class="text-center text-muted footer">
+					<sm>© Wynston Ramsay 2017 All Rights Reserved</sm>
+				</footer>
 			</div>
 		</div>
 		<!-- Contact Info ends -->
-
-		<footer class="text-center text-muted">
-			<sm>© Wynston Ramsay 2017</sm>
-		</footer>
 
 		<!-- Scripts -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" type='text/javascript'></script>

@@ -19,6 +19,6 @@ appModule.controller('mainController', function($scope, $http){
 		    }, 1000);
 		    return false;
 		});
-		  $('.scrollTop a').scrollTop();
+		$('.scrollTop a').scrollTop();
 	}
 });

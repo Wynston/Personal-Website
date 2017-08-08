@@ -37,6 +37,11 @@ p{
 	border-radius: 0;
 }
 
+.footer{
+	font-size: 0.75em;
+	margin-bottom: 1em;
+}
+
 .margin0{
 	margin: 0;
 }
@@ -48,16 +53,22 @@ p{
 	border-color: #353535;
 }
 
-
 .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover{
 	background-color: #1B58B4;
 	border-radius: 2em;
 	box-shadow: 0 4px #0A377C;
+	font-size: 1em;
 }
 
 .navbar-inverse .navbar-nav> li>a{
 	margin-top: 0.33em;
 	margin-bottom: 0.33em;
+	-webkit-transition: font-size 0.5s;
+    transition: font-size 0.5s;
+}
+
+.navbar-inverse .navbar-nav> li>a:hover{
+	font-size: 1.1em;
 }
 
 .padding0{
@@ -68,7 +79,7 @@ p{
 #aboutMe{
 	margin-top: 15%;
 	margin-left: 2.5%;
-	width: 40%;
+	max-width: 40vw;
 	float: left;
 	background: rgba(255,255,255,0.4);
 	color: #061D40;
@@ -85,9 +96,15 @@ p{
 #navbarTitle{
 	font-size: 1.5em;
 	font-weight: bold;
-	color: #1B58B4;
+	color: #2F70D2;
 	margin-top: 0.25em;
 	margin-bottom: 0.25em;
+	-webkit-transition: font-size 0.5s;
+    transition: font-size 0.5s;
+}
+
+#navbarTitle:hover{
+	font-size: 1.55em;
 }
 
 #myNavbar{
@@ -98,38 +115,13 @@ p{
 	padding-top: 1em;
 }
 
-#resumeTitleRow{
-	height: 10%;
-}
-
-#resumeContentRow{
-	height: 90%;
-}
-
-.resumeColContainer{
-	width: 50%; 
-	padding-right: 0.5em;
-}
-
-.resumeBox{
-	background: rgba(255,255,255,0.4);
-	color: #061D40;
-	border-radius: 10px;
-	border: solid 1px #030624;
-}
-
-.resumeBoxPadding{
-	padding-left: 0.5em;
-	padding-right: 0.5em;
-}
-
-.resumeBoxMargin{
-	margin-bottom: 0.5em;
+#wrLogo{
+	height: 1.25em;
 }
 
 /*~~~~~~~~~~~~~~~~~~~Social Media begins~~~~~~~~~~~~~~~~~~~*/
 #email{
-	font-size: 2.25em;
+	font-size: 2.35em;
 	color: #BD0707;
 	-webkit-transition: all 0.25s ease;
     -moz-transition: all 0.25s ease;
@@ -138,7 +130,7 @@ p{
     transition: all 0.25s ease;
 }
 
-#gitHub{
+#gitHubLarge{
 	font-size: 3em;
 	color: #511094;
 	-webkit-transition: all 0.25s ease;
@@ -146,6 +138,11 @@ p{
     -o-transition: all 0.25s ease;
     -ms-transition: all 0.25s ease;
     transition: all 0.25s ease;
+}
+
+#gitHubSmall{
+	font-size: 1.25em;
+	color: #511094;
 }
 
 #linkedIn{
@@ -158,41 +155,33 @@ p{
     transition: all 0.25s ease;
 }
 
-#email:hover, #facebook:hover, #gitHub:hover, #linkedIn:hover{
+#resumeIcon{
+	font-size: 1.25em;
+	color: #941016;
+}
+
+#email:hover, #gitHubLarge:hover, #linkedIn:hover{
 	opacity: 0.5;
 }
+
 /*~~~~~~~~~~~~~~~~~~~Social Media ends~~~~~~~~~~~~~~~~~~~*/
 
 /*~~~~~~~~~~~~~~~~~~~Parallax effect begins~~~~~~~~~~~~~~~~~~~*/
-.parallax{ 
-    height: 100%;
-    height: -webkit-calc(100% - 50px);
-    height: -moz-calc(100% - 50px);
-    height: calc(100% - 50px);
-    padding-left: 0 !important;
-	padding-right: 0 !important;
-}
-
 .aboutParallax{
 	height: 100%;
+    padding-left: 0 !important;
+	padding-right: 0 !important;
 	background-image: url("../images/portrait1.jpg");
 	background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    -webkit-filter: contrast(125%) brightness(125%);
+    filter: contrast(125%) brightness(125%);
 }
 
-.portfolioParallax{
-	height: 100%;
-	background-image: url("../images/galaxy.jpg");
-	background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.resumeParallax{
-	height: 100%;
+.contactInfoParallax{
+	max-height: 50%;
 	background-image: url("../images/galaxy.jpg");
 	background-attachment: fixed;
     background-position: center;
@@ -222,12 +211,22 @@ p{
 	body{
 		font-size: 12px;
 	}
+
+	.aboutParallax{
+		background-image: url("../images/portrait1Small.jpg");
+		background-attachment: scroll;
+	}
 }	
 
 /* ---------------------------------Large Portrait phones--------------------------------- */
 @media (max-width: 480px) {
 	body{
 		font-size: 10px;
+	}
+
+	.aboutParallax{
+		background-image: url("../images/portrait1Small.jpg");
+		background-attachment: scroll;
 	}
 }
 
@@ -236,4 +235,10 @@ p{
 	body{
 		font-size: 8px;
 	}
+
+	.aboutParallax{
+		background-image: url("../images/portrait1Small.jpg");
+		background-attachment: scroll;
+	}
+
 }	
