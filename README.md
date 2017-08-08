@@ -1,2 +1,2 @@
-# Personal-Website
-Wynston Ramsay's personal website 
+# Wynston Ramsay's Personal Website
+ 
