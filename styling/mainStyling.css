@@ -87,8 +87,7 @@ p{
 }
 
 #contactInfo{
-	margin-top: 1em;
-	margin-bottom: 1em;
+	height: calc(100% - 50px);
 }
 
 #contactHeader{
@@ -180,6 +179,16 @@ p{
     background-size: cover;
     -webkit-filter: contrast(125%) brightness(125%);
     filter: contrast(125%) brightness(125%);
+}
+
+.contactParallax{
+    padding-left: 0 !important;
+	padding-right: 0 !important;
+	background-image: url("../images/galaxy.jpg");
+	background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 /*~~~~~~~~~~~~~~~~~~~Parallax effect ends~~~~~~~~~~~~~~~~~~~*/
 
